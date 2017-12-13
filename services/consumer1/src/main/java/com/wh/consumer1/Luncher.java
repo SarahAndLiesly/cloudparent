@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients({"com.wh.producer1"})
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
 public class Luncher {
     public static void main(String[] args) {
         SpringApplication.run(Luncher.class, args);
