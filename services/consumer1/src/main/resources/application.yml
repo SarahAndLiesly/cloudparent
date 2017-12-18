@@ -3,10 +3,10 @@ server:
 spring:
   application:
     name: consumer1
-eureka:
-  client:
-    service-url:
-      defaultZone: http://192.168.1.7:9000/eureka/
+
 feign:
   hystrix:
     enabled: true
+management:
+  security:
+    enabled: false

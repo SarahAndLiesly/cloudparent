@@ -1,0 +1,18 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lieslycat/springcloudtest.git
+          search-paths: config-repo
+          username: lieslycat
+          password: 1b3e8mxxiz
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+

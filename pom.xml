@@ -12,6 +12,7 @@
         <module>discoveryservice</module>
         <module>services/producer1</module>
         <module>services/consumer1</module>
+        <module>configservice</module>
     </modules>
 
     <parent>
@@ -38,6 +39,23 @@
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <swagger.version>2.2.2</swagger.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
