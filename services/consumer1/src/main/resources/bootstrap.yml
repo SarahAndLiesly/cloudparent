@@ -7,7 +7,9 @@ spring:
         name: neo-config
         profile: dev
         label: master
-#        uri: http://localhost:9006/
+      bus:
+        trace:
+          enabled: true
 eureka:
   client:
     service-url:

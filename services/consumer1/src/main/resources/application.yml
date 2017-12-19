@@ -1,8 +1,38 @@
+---
 server:
   port: 9004
 spring:
   application:
     name: consumer1
+  profiles: c1
+
+feign:
+  hystrix:
+    enabled: true
+management:
+  security:
+    enabled: false
+---
+server:
+  port: 9007
+spring:
+  application:
+    name: consumer1
+  profiles: c2
+
+feign:
+  hystrix:
+    enabled: true
+management:
+  security:
+    enabled: false
+---
+server:
+  port: 9008
+spring:
+  application:
+    name: consumer1
+  profiles: c3
 
 feign:
   hystrix:
